@@ -1,8 +1,7 @@
 /* Go to https://www.youtube.com/watch?v=dQw4w9WgXcQ and follow the instructions and code! */
 
-const express = require('express'); //import express and require it
 
-const server = express() // server is set to express
+const server = require("./server") // server is set to express
 
 
 const PORT = 5000 // port set up
