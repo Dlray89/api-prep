@@ -63,3 +63,17 @@ router.delete("/", (req,res) => {
         res.status(500).json({errorMessage})
     })
 })
+----------------------------------------
+
+router.put('', () => {
+    set id
+    const updateShow = req.body
+    showdb
+    .update(id, update)
+    .then( updateShow =>{
+        res status(200)
+    })
+    .catch(error => {
+        res.status(500)
+    })
+})
