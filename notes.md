@@ -35,4 +35,31 @@ setting up the route
 set up a GET
 
 connect to showsDB for the information thats in the data base
-then do a get by shows.db showsDB.get().then().catch()
+then do a get by shows.db 
+showsDB
+.get()
+.then( shows =>{
+    set res.status(200).json(shows)
+})
+.catch( catch the error by status(500).json({errorMessage:"message"}))
+
+set up POST
+router.post("/", () => {
+    shows.DB.insert().then().catch()
+})
+
+-----------------------------------------------------------------
+
+set up delete
+
+router.delete("/", (req,res) => {
+    const { id } = params.id
+    showsDB
+    .remove(id)
+    .then(deleteShow => {
+        res.status(200).json(deleteShow)
+    })
+    .catch(error => {
+        res.status(500).json({errorMessage})
+    })
+})
