@@ -28,3 +28,11 @@ require express
 
 set variable to require the route model( const showDB = require(folder))
 module.exports = router
+
+import cors to routers
+setting up the route
+
+set up a GET
+
+connect to showsDB for the information thats in the data base
+then do a get by shows.db showsDB.get().then().catch()
